@@ -102,8 +102,6 @@
 		110A8A7814E9A30A0013AC07 = {
 			isa = PBXGroup;
 			children = (
-				DA0619AE16A312E200DB4BB8 /* MobileCoreServices.framework */,
-				DA0619AC16A3127300DB4BB8 /* SystemConfiguration.framework */,
 				1133748E169ACF5A003E2CE9 /* README.md */,
 				11337496169AD3AF003E2CE9 /* BlockRSSParser.podspec */,
 				11337490169ACF5F003E2CE9 /* LICENSE */,
@@ -126,6 +124,8 @@
 		110A8A8614E9A30C0013AC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA0619AE16A312E200DB4BB8 /* MobileCoreServices.framework */,
+				DA0619AC16A3127300DB4BB8 /* SystemConfiguration.framework */,
 				110A8A8714E9A30C0013AC07 /* UIKit.framework */,
 				110A8A8914E9A30C0013AC07 /* Foundation.framework */,
 				110A8A8B14E9A30C0013AC07 /* CoreGraphics.framework */,

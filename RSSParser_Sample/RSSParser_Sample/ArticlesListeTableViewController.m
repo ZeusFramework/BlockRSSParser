@@ -15,6 +15,8 @@
 
 #import "UIImageView+AFNetworking.h"
 
+#define urlToParse @"http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+
 
 @implementation ArticlesListeTableViewController
 @synthesize dataSource;
@@ -50,9 +52,9 @@
     
     [self setTitle:@"Loading..."];
     
-    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://blog.lelevier.fr/rss"]];
+    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlToParse]];
     [RSSParser parseRSSFeedForRequest:req success:^(NSArray *feedItems) {
-        [self setTitle:@"Blog"];
+        [self setTitle:@"NY Times"];
         [self setDataSource:feedItems];
         [self.tableView reloadData];
     } failure:^(NSError *error) {
